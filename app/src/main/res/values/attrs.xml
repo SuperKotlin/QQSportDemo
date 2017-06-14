@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="QQSportView">
+
+        <attr name="out_bg_color" format="color" />
+        <attr name="in_bg_color" format="color" />
+        <attr name="circle_width" format="dimension" />
+        <attr name="text_color" format="color" />
+        <attr name="text_size" format="dimension" />
+
+    </declare-styleable>
+
+</resources>

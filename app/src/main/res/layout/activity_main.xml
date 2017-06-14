@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.example.zhuyong.qqsportdemo.MainActivity">
+
+    <com.example.zhuyong.qqsportdemo.QQSportView
+        android:id="@+id/qqsport_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        app:in_bg_color="@color/colorAccent"
+        app:out_bg_color="@color/colorPrimaryDark"
+        app:text_color="@color/colorAccent"
+        app:text_size="40sp" />
+
+    <TextView
+        android:id="@+id/tv_paint_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="画笔宽度10dp"
+        android:textSize="14sp" />
+
+    <SeekBar
+        android:id="@+id/sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/tv_current_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp" />
+
+    <SeekBar
+        android:id="@+id/sb_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_big_rad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大圆弧" />
+
+        <Button
+            android:id="@+id/btn_small_rad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="小圆弧" />
+    </RelativeLayout>
+</LinearLayout>
